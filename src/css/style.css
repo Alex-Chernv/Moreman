@@ -1360,7 +1360,7 @@ h3,.h3 {
 
 .order__counter-text {
 	position: relative;
-	top: -8px;
+	top: -4px; /*!!!*/
 }
 
 .order__counter-plus {
@@ -1382,6 +1382,7 @@ h3,.h3 {
 }
 
 .order__text {
+	width: 100%; /*!!!*/
 	margin-right: 10px;
 }
 
