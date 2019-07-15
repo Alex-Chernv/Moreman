@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="src/css/base.css">
 	<link rel="stylesheet" href="src/css/choices.min.css">
 	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/menu.css">
 
 	<title>Document</title>
 </head>
@@ -168,42 +169,45 @@
 				</div>
 			</header>
 			<div class="main__home">
-				<div class="preview">
-					<div class="preview__section">
-						<picture class="preview__image" aria-label="Image product">
-						    <source srcset="./src/img/preview/product-preview-2560.png" media="(min-width: 1601px)">
-						    <source srcset="./src/img/preview/product-preview-1600.png" media="(min-width: 1281px) and (max-width: 1600px)">
-						    <source srcset="./src/img/preview/product-preview-1280.png" media="(min-width: 1025px) and (max-width: 1280px)">
-						    <source srcset="./src/img/preview/product-preview-1024.png" media="(max-width: 1024px)">
-						    <img srcset="./src/img/preview/product-preview-2560.png">
-						</picture>
-
-						<div class="preview__content">
-							<div class="preview__text">
-								<div class="preview__block-heading">
-									<h2 class="preview__heading">
-										<span>Настоящий</span>
-										<span>камчатский краб</span>
-									</h2>
-								</div>
-								<div class="preview__block-text">
-									<span>Нежнейшее мясо</span>
-									<span>в лучших рецептах</span>
-								</div>
-							</div>
-
-							<div class="preview__block-link">
-								<a class="preview__link" href="#">Подробнее</a>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="main__home-section">
-					<div class="main__home-heading">Самые популярные сегодня</div>
+					<div class="main__home-subnav">
+						<div class="main__home-heading">РОЛЛЫ</div>
+						<ul class="main__home-subnav-list">
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link main__home-subnav-link--active">Все</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Классические</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Авторская серия</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Теплые роллы</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Запеченные роллы</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Авторская серия</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Авторская серия</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Теплые роллы</a>
+							</li>
+							<li class="main__home-subnav-item">
+								<a href="#0" class="main__home-subnav-link">Запеченные роллы</a>
+							</li>
+						</ul>
+					</div>
+					<hr class="divider">
+					<h2 class="main__home-heading-2">Классические</h2>
 					<div class="main__home-content js-main-content">
-						<div class="product js-product" data-name="Очень вкусный салат с курицей и яйцом «Мамина гордость»" data-price="1575" data-old-price="" data-item-id="1234561">
+						<div class="product js-product" data-name="Очень вкусный салат с курицей и яйцом «Мамина гордость»" data-price="1575" data-old-price="1900" data-item-id="1234561" data-kcal="608" data-protein="26" data-fats="16" data-carbs="86" data-weight="290г" data-src="./src/img/product/product_2-big.jpg">
 							<div class="product__section">
-								<div class="product__content">
+								<div class="product__content js-product-card">
 									<div class="product__block-image">
 										<img class="product__image" src="./src/img/product/product_1.jpg" alt="Продукт #1">
 										<div class="product__block-operation">
@@ -211,10 +215,9 @@
 											<div class="product__operation product__operation--star js-operation-star" role="button"></div>
 											<div class="product__operation product__operation--fire js-operation-fire" role="button"></div>
 										</div>
-										<a href="#" class="product__link"></a>
 									</div>
 									<div class="product__block-heading">
-										<h3 class="product__heading">Багет с говяжьей вырезкой «Шедевры домашней кухни»</h3>
+										<h3 class="product__heading js-product__heading">Багет с говяжьей вырезкой «Шедевры домашней кухни»</h3>
 									</div>
 									<div class="product__block-text">
 										<p>
@@ -227,6 +230,7 @@
 								</div>
 								<div class="product__order">
 									<div class="product__price">
+										<span class="product__price-old">1900&nbsp;₽</span>
 										<span>1575</span>&nbsp;<span>₽</span>
 									</div>
 									<div class="product__block-button">
@@ -618,6 +622,68 @@
 							</div>
 						</div>
 					</div>
+					<div class="product-single-wrap js-product-single-wrap">
+						<div class="product-single-overlay js-product-single-overlay"></div>
+						<div class="product-single js-product">
+							<div class="product-single-block">
+								<div class="product__block-image">
+									<img class="product__image js-product__image" alt="Продукт #2">
+									<button class="product__btn-close js-product-close-btn"></button>
+								</div>
+								<div class="product__content">
+									<div class="product__block-heading">
+										<h3 class="product__heading js-product__heading"></h3>
+									</div>
+									<div class="product__block-text">
+										<p>Самая большая и самая вкусная "Филадельфия" в Москве! Классический рецепт, вес - почти 300 грамм (!!), правильный сливочный сыр и свежий, а не замороженный лосось. Самая большая и самая вкусная "Филадельфия" в Москве! Классический рецепт, вес - почти 300 грамм (!!), правильный сливочный сыр и свежий, а не замороженный лосось.</p>
+									</div>
+									<div class="product__block-text">
+										<p>Состав: лосось, сливочный сыр,икра тобико, табаджан, авокадо, огурец, рис, нори</p>
+									</div>
+									<div class="product__block-operation">
+										<div class="product__operation product__operation--leaf js-operation-leaf" role="button"></div>
+										<div class="product__operation product__operation--star js-operation-star" role="button"></div>
+										<div class="product__operation product__operation--fire js-operation-fire" role="button"></div>
+									</div>
+								</div>
+							</div>
+							<div class="product__order">
+								<div class="product-composition">
+									<p class="product-composition__item">
+										<span class="product-composition__text product-composition__text--bold js-product__weight"></span>
+										<span class="product-composition__text">грамм</span>
+									</p>
+									<p class="product-composition__item">
+										<span class="product-composition__text product-composition__text--bold js-product__kcal"></span>
+										<span class="product-composition__text">ккал</span>
+									</p>
+									<p class="product-composition__item">
+										<span class="product-composition__text product-composition__text--bold js-product__protein"></span>
+										<span class="product-composition__text">белки</span>
+									</p>
+									<p class="product-composition__item">
+										<span class="product-composition__text product-composition__text--bold js-product__fats"></span>
+										<span class="product-composition__text">жиры</span>
+									</p>
+									<p class="product-composition__item">
+										<span class="product-composition__text product-composition__text--bold js-product__carbs"></span>
+										<span class="product-composition__text">углеводы</span>
+									</p>
+								</div>
+								<div class="product-price-wrap">
+									<div class="product__price">
+										<span class="product__price-old js-product__price-old"></span>
+										<span class="js-product__price"></span>&nbsp;<span>₽</span>
+									</div>
+									<div class="product__block-button">
+										<button class="product__button product__button--minus js-count-minus"></button>
+										<div class="product__count js-product-count">0</div>
+										<button class="product__button product__button--plus js-count-plus"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<footer class="footer"></footer>
@@ -891,6 +957,7 @@
 	<script src="src/js/calendar.js"></script>
 	<script src="src/js/near-future.js"></script>
 	<script src="src/js/my-address.js"></script>
+	<script src="src/js/main.js"></script>
 
     <script src="src/js/input_validation.js"></script>
 

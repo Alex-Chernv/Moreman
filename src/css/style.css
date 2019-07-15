@@ -11,7 +11,7 @@
 }
 
 @font-face {
-	font-family: '"Futura PT Medium"';
+	font-family: 'Futura PT Medium';
 	src: url('../fonts/futura_medium/futura_medium.eot');
 	src: url('../fonts/futura_medium/futura_medium.eot?#iefix') format('embedded-opentype'), 
 		url('../fonts/futura_medium/futura_medium.svg') format('svg'), 
@@ -617,6 +617,7 @@ h3,.h3 {
 
 .product__content {
 	padding: 10px 10px 0px;
+	cursor: pointer;
 }
 
 .product__block-image {
@@ -659,7 +660,7 @@ h3,.h3 {
 	width: 22px;
 	height: 22px;
 	margin-right: 11px;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -1360,7 +1361,7 @@ h3,.h3 {
 
 .order__counter-text {
 	position: relative;
-	top: -4px; /*!!!*/
+	top: -8px;
 }
 
 .order__counter-plus {
@@ -1382,7 +1383,6 @@ h3,.h3 {
 }
 
 .order__text {
-	width: 100%; /*!!!*/
 	margin-right: 10px;
 }
 
