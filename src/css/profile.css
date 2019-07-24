@@ -1,0 +1,398 @@
+/*========== profile modal ==========*/
+
+.profile-modal-wrap {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .26);
+    cursor: pointer;
+}
+
+.profile-modal {
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 345px;
+    top: 30%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 20px 30px 25px;
+}
+
+.profile-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-modal-body {
+    margin-top: 15px;
+}
+
+.profile-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.profile-modal .main__home-heading {}
+
+.profile-modal-btn {
+    font-size: 16px;
+    color: #2CA2E0;
+}
+
+.profile-modal-body .profile-form__input {
+    width: 100% !important;
+}
+
+.profile-modal-body .profile-form__input::placeholder {
+    font-weight: 400;
+    color: #D8D8D8;
+}
+
+
+.profile-modal .profile-form__input:not(:last-child) {
+    border-bottom: none;
+}
+
+
+/*========== registration ==========*/
+
+
+.profile-registration {
+    top: 3%;
+}
+
+.profile-form-group-gender {
+    margin: 16px 0!important;
+}
+
+.profile-form-gender__label {
+    width: 50%;
+    text-align: center;
+    box-shadow: inset 0 0 0px 1px #D8D8D8;
+    height: 30px;
+    line-height: 30px;
+}
+
+.profile-form-gender__input {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    -webkit-appearance: none;
+}
+
+.profile-form-gender__input:checked+.profile-form-gender__label {
+    background: url("../img/background/blue-background-button.png") no-repeat center center;
+    box-shadow: none;
+}
+
+.profile-registration .profile-form-group-wrap {
+    border: 1px solid #D8D8D8;
+    padding: 10px 0 0 0;
+    width: 100%;
+}
+
+.profile-registration .profile-form-group-wrap .profile__text {
+    margin-left: 15px;
+}
+
+.profile-form-group-wrap .profile-form__input {
+    border-left: none;
+    border-right: none;
+}
+
+.profile-form-group-wrap .profile-form__input:last-child {
+    border-bottom: none;
+}
+
+.profile-registration .profile-select-wrap {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.profile-registration .form__select-label {
+    width: 85px !important;
+}
+
+.profile-registration .form__select-label:nth-child(2) {
+    width: 97px !important;
+}
+
+/*========== profile main styles ==========*/
+
+.profile {}
+
+.profile .main__home-heading {
+    text-align: left;
+    padding: 0 29px;
+    margin: 0 0 10px;
+}
+
+.profile__text {
+    font-size: 16px;
+}
+
+.profile__text--bold {
+    font-weight: 700;
+}
+
+.profile__text--gray {
+    color: #D8D8D8;
+}
+
+.profile__text--red {
+    color: #E14949;
+}
+
+
+/*========== info page ==========*/
+
+.profile-form {
+    margin: 50px 0;
+    padding: 0 29px;
+    width: 488px;
+}
+
+.profile-form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.profile-form-group .form__heading {
+    width: 140px;
+}
+
+.profile-form__input,
+.profile-form__textarea {
+    border: 1px solid #D8D8D8;
+    height: 40px;
+    padding: 0 10px;
+    width: 290px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.profile-form-group .form__checkbox-label {
+    margin-left: 140px;
+}
+
+.profile-form-group .form__checkbox-label:first-child {
+    margin-top: 0;
+}
+
+.profile-form-group .form__select-label {
+    width: 97px;
+}
+
+.profile-form-group .form__select-label:last-child {
+    width: 96px;
+}
+
+.profile-form .form__button {
+    width: 220px;
+    margin: 25px 0 0 140px;
+    background-size: 100% 100%;
+}
+
+
+/*========== orders page ==========*/
+
+.profile-orders {
+    margin: 53px 0;
+    padding: 0 20px;
+}
+
+.profile-order-item {
+    padding: 30px 9px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.profile-order-item:last-child {
+    border-bottom: none;
+}
+
+.profile-order-item-header {
+    display: flex;
+    align-items: center;
+    width: 630px;
+}
+
+.profile-order-item-header .profile__text {
+    margin-right: 40px;
+}
+
+.profile-order-item-body {
+    margin: 10px 0;
+    width: 630px;
+}
+
+.profile-order-item-body .profile__text {
+    margin: 10px 0;
+    display: flex;
+}
+
+.profile-order-item-footer {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 630px;
+}
+
+.profile-order-item__span:nth-child(1) {
+    width: 500px;
+}
+
+.profile-order-item__span:nth-child(2) {
+    width: 70px;
+}
+
+.profile-order-item__span:nth-child(3) {
+    width: 60px;
+    text-align: right;
+}
+
+
+/*========== address page ==========*/
+
+.profile-address {
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.profile-address-list {
+    padding: 0 9px 30px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.profile-address-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-address-item .profile__text {
+    width: 240px;
+}
+
+.profile-address-item__btn-edit {
+    font-family: "Futura PT Book", Arial;
+    color: #2CA2E0;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.profile-address-item__btn-remove {
+    margin-left: 15px;
+    background: url("../img/icons/delete.png") no-repeat center center;
+    background-size: contain;
+    width: 18px;
+    height: 14px;
+}
+
+.profile-address .profile-form {
+    padding: 0 9px;
+    margin: 30px 0;
+}
+
+.profile-form-group-textarea {
+    align-items: baseline;
+}
+
+.profile-form__textarea {
+    height: 110px;
+    padding-top: 10px;
+}
+
+
+.profile-edit-form {
+    background: #F5F5F5;
+    width: calc(100% + 58px);
+    margin-left: -29px;
+    padding: 30px 29px;
+    position: relative;
+    display: none;
+}
+
+.profile-edit-form--open {
+    display: block;
+}
+
+.profile-edit-form-header {
+    margin: 0 0 30px;
+}
+
+.profile-edit__close {
+    position: absolute;
+    top: 24px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icons/close-blue.svg") no-repeat center center;
+    background-size: contain;
+}
+
+.profile-edit-form-buttons {
+    margin: 25px 0 0 140px;
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-edit-form-buttons .form__button {
+    width: 135px;
+    background-size: 100%;
+}
+
+
+/*========== discount page ==========*/
+
+.profile-discount {
+    margin: 50px 0;
+    padding: 0 29px;
+}
+
+.profile-discount .profile-form {
+    margin: 20px 0 40px;
+    padding: 0;
+}
+
+.profile-discount .form__button {
+    margin: 40px 0 0 0;
+}
+
+.profile-discount-list {}
+
+.profile-discount-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-discount-item:first-child {
+    margin-bottom: 20px;
+}
+
+.profile-discount-list .profile__text {
+    width: 180px;
+}
+
+.profile-discount .profile__text:last-child {
+    width: 147px;
+}

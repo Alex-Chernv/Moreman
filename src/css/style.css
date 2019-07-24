@@ -1460,7 +1460,7 @@ h3,.h3 {
 	transition: max-height .4s;
 }
 
-.near-future .choices__item[data-value="0"]  {
+.choices__item[data-value="0"]  {
 	color: #d8d8d8 !important;
 }
 

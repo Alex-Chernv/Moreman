@@ -7,13 +7,36 @@ function ready() {
     var productWrap = $('.product-single-wrap').eq(0);
     var productOverlay = $('.js-product-single-overlay');
     var productCloseBtn = $('.js-product-close-btn');
+    var profileAddressBtnEdit = $('.js-profile-address-btn-edit');
+    var profileEditForm = $('.js-profile-edit-form');
+    var profileEdiFormBtnClose = $('.js-profile-edit-form-btn-close');
+    var profileModal = $('.js-profile-modal-wrap');
+    var profileModalOverlay = $('.js-profile-modal-overlay');
+    var profileModalBtnClose = $('.js-profile-modal-btn-close');
+    var profileModalBtnSwitch = $('.js-profile-modal-btn-switch');
 
 
     /*====== events ======*/
 
-    productCard.on('click', openProductPopup);
-    productOverlay.on('click', closeProductPopup);
-    productCloseBtn.on('click', closeProductPopup);
+    if (productCard && productOverlay && productCloseBtn) {
+        productCard.on('click', openProductPopup);
+        productOverlay.on('click', closeProductPopup);
+        productCloseBtn.on('click', closeProductPopup);
+    }
+
+    if (profileAddressBtnEdit) {
+        profileAddressBtnEdit.on('click', openProfileEditForm);
+    }
+
+    if (profileEdiFormBtnClose) {
+        profileEdiFormBtnClose.on('click', closeProfileEditForm);
+    }
+
+    if (profileModal && profileModalOverlay && profileModalBtnClose && profileModalBtnSwitch) {
+        profileModalOverlay.on('click', closeProfileModal);
+        profileModalBtnClose.on('click', closeProfileModal);
+        profileModalBtnSwitch.on('click', switchProfileModal);
+    }
 
 
     /*====== functions ======*/
@@ -26,7 +49,9 @@ function ready() {
     }
 
     function closeProductPopup() {
-        productWrap.removeClass('product-single-wrap--open');
+        if (productWrap) {
+            productWrap.removeClass('product-single-wrap--open');
+        }
     }
 
     function getProductPopupData(card) {
@@ -61,5 +86,38 @@ function ready() {
         productWrap.find('.js-product__protein').text(cardData.protein);
         productWrap.find('.js-product__fats').text(cardData.fats);
         productWrap.find('.js-product__carbs').text(cardData.carbs);
+    }
+
+    function openProfileEditForm(event) {
+
+        var item = $(event.currentTarget).parent('.profile-address-item');
+
+        item.after(profileEditForm);
+        item.hide(0);
+        profileEditForm.addClass('profile-edit-form--open');
+    }
+
+    function closeProfileEditForm(event) {
+        event.preventDefault();
+        var item = $(event.currentTarget).parents('.js-profile-edit-form').prev('.profile-address-item');
+
+        item.show(0);
+        profileEditForm.removeClass('profile-edit-form--open');
+    }
+
+    function closeProfileModal() {
+        profileModal.hide(0);
+    }
+
+    function switchProfileModal(event) {
+        event.preventDefault();
+
+        var nextModalName = $(event.currentTarget).data('switch-modal');
+        var nextModal = $('.js-profile-modal[data-modal="' + nextModalName + '"]');
+
+        if (nextModal.length > 0) {
+            $('.js-profile-modal').hide(0);
+            nextModal.show(0);
+        }
     }
 }

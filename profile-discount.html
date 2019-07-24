@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover" />
+	<meta name="format-detection" content="telephone=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4affc8e9-5ee6-4ed1-beea-29e6936c7dcb" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="src/css/reset.css">
+	<link rel="stylesheet" href="src/css/base.css">
+	<link rel="stylesheet" href="src/css/choices.min.css">
+	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/menu.css">
+	<link rel="stylesheet" href="src/css/profile.css">
+
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="menu-background js-menu-background"></div>
+		<div class="left js-left">
+			<div class="left__content">
+				<div class="logo">
+					<a href="#">
+						<h1 class="logo__text sr-only">
+							<span>Мореман</span>
+							<span>море на дом</span>
+						</h1>
+						<img class="logo__image" src="./src/img/logo.png" alt="Logotype">
+					</a>
+				</div>
+				<nav class="menu-nav">
+					<ul class="menu-nav__list">
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Все меню</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Роллы</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Суши</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Сашими</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Устрицы</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Бургеры</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Тартары И Савиче</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="" class="menu-nav__list-link">Салаты</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Супы</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Горячее</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Wok</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Напитки</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Популярное</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Сеты</a>
+						</li>
+						<li class="menu-nav__list-item">
+							<a href="#" class="menu-nav__list-link">Детское меню</a>
+						</li>
+					</ul>
+				</nav>
+		
+				<div class="left-border" aria-hidden="true"></div>
+				
+				<div>
+					<ul class="classes-nav">
+						<li class="classes-nav__list-item">
+							<a href="#" class="classes-nav__list-link classes-nav__list-link--leaf">Вегетаринское</a>
+						</li>
+						<li class="classes-nav__list-item">
+							<a href="#" class="classes-nav__list-link classes-nav__list-link--hot">Острое</a>
+						</li>
+						<li class="classes-nav__list-item">
+							<a href="#" class="classes-nav__list-link classes-nav__list-link--hit">Хит</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	
+			<div class="mobile">
+				<a href="#" class="mobile__link">Мобильная Версия</a>
+			</div>
+		</div>
+	
+		<main class="main">
+			<header class="header">
+				<div class="header__content">
+					<div class="header__information">
+						<div class="header__information-segment">
+							<div class="header__information-block">
+								<a class="header__information-link" href="tel:8-495-646-02-04">+7 (495) 646-02-04</a>
+							</div>
+							<div class="header__information-block">
+								<span class="header__information-text">пн–вс: </span>
+								<span class="header__information-text">11:00&nbsp;—&nbsp;23:00</span>
+							</div>
+						</div>
+					</div>
+					<div class="header__navigation">
+						<div class="header__navigation-block header__navigation-block--nav">
+							<ul class="header__navigation-list">
+								<li class="header__navigation-item header__navigation-item--sub-menu">
+									<ul class="header__navigation-sub-menu">
+										<li class="header__navigation-item">	
+											<a href="#" class="header__navigation-text">Идея</a>
+										</li>
+										<li class="header__navigation-item">	
+											<a href="#" class="header__navigation-text">Команда</a>
+										</li>
+										<li class="header__navigation-item">	
+											<a href="#" class="header__navigation-text">Вакансии</a>
+										</li>
+										<li class="header__navigation-item">	
+											<a href="#" class="header__navigation-text">Контакты</a>
+										</li>
+									</ul>
+									<a href="#" class="header__navigation-text">О&nbsp;нас</a>
+								</li>
+								<li class="header__navigation-item">
+									<a href="#" class="header__navigation-text">Условия</a>
+								</li>
+								<li class="header__navigation-item header__navigation-item--sub-menu">
+									<a href="#" class="header__navigation-text">Отзывы</a>
+									<ul class="header__navigation-sub-menu">
+										<li class="header__navigation-item">	
+											<a href="#" class="header__navigation-text">Отзывы</a>
+										</li>
+										<li class="header__navigation-item">	
+											<a href="#" class="header__navigation-text">Отзывы</a>
+										</li>
+										<li class="header__navigation-item">	
+											<a href="#" class="header__navigation-text">Отзывы</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="header__navigation-block header__navigation-block--network">
+							<a class="header__navigation-network header__navigation-network--vk" href="#"></a>
+							<a class="header__navigation-network header__navigation-network--fb" href="#"></a>
+							<a class="header__navigation-network header__navigation-network--inst" href="#"></a>
+						</div>
+						<div class="header__navigation-block">
+							<button class="header__navigation-user"></button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="main__home">
+				<div class="main__home-section">
+					<div class="profile">
+						<h1 class="main__home-heading">Личный кабинет</h1>
+						<div class="main__home-subnav">
+							<ul class="main__home-subnav-list">
+								<li class="main__home-subnav-item">
+									<a href="./profile-info.html" class="main__home-subnav-link">Личная информация</a>
+								</li>
+								<li class="main__home-subnav-item">
+									<a href="./profile-orders.html" class="main__home-subnav-link">Мои заказы</a>
+								</li>
+								<li class="main__home-subnav-item">
+									<a href="./profile-address.html" class="main__home-subnav-link">Мои адреса</a>
+								</li>
+								<li class="main__home-subnav-item">
+									<a href="./profile-discount.html" class="main__home-subnav-link main__home-subnav-link--active">Дисконтные карты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="profile-discount">
+							<p class="profile__text profile__text--red">У Вас есть неактивированная дисконтная карта, которая даем Вам <span class="profile__text--bold">15%</span> скидки!</p>
+							<form class="profile-form">
+								<div class="profile-form-group">
+									<label class="form__heading">Номер карты</label>
+									<input type="text" class="profile-form__input">
+								</div>
+								<div class="profile-form-group">
+									<label class="form__heading">ПИН-код</label>
+									<input type="text" class="profile-form__input">
+								</div>
+								<button class="form__button">Активировать карту</button>
+							</form>
+							<div class="profile-discount-list">
+								<div class="profile-discount-item">
+									<p class="profile__text profile__text--bold">Номер карты</p>
+									<p class="profile__text profile__text--bold">ПИН-код</p>
+									<p class="profile__text profile__text--bold">Скидка</p>
+									<p class="profile__text profile__text--bold">Статус</p>
+								</div>
+								<div class="profile-discount-item">
+									<p class="profile__text">123456890</p>
+									<p class="profile__text">???</p>
+									<p class="profile__text">15%</p>
+									<p class="profile__text">Выдана</p>
+								</div>
+								<div class="profile-discount-item">
+									<p class="profile__text">123456890</p>
+									<p class="profile__text">123456890</p>
+									<p class="profile__text">25%</p>
+									<p class="profile__text">Аннулирована</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer"></footer>
+		</main>
+	
+		<div class="right js-right">
+			<div class="right__content js-right-content">
+				<div class="right__basket">
+					<a href="#" class="right__basket-link">
+						<span class="js-basket-default">Пока корзина пуста</span>
+						<span class="js-basket-price is-hidden">
+							<span></span>
+							<span>₽</span>
+						</span>
+					</a>
+				</div>
+				<div class="right__form">
+					<form class="form">
+						<div class="form__content">
+							<div class="form__section">
+								<div class="order js-order"></div>
+								
+								<div class="new-address js-new-address">
+									<div class="new-address__content">
+										<div class="new-address__item js-new-address-item" data-address="СПБ" data-entrance="2" data-doorphone="73" role="button">Дом</div>
+										<div class="new-address__item js-new-address-item" data-address="СПБ" data-entrance="2" data-doorphone="73" role="button">Работа</div>
+										<div class="new-address__item js-new-address-close" role="button">Новый адрес</div>
+									</div>
+								</div>
+								<span class="form__heading">Адрес и время доставки</span>
+								<div class="form__block-link">
+									<label class="form__input-label form__input-label--geo">
+										<span class="form__title">Улица, дом, корпус, квартира</span>
+										<input id="suggest" class="form__input form__input--link js-input js-address-current" type="text" name="ORDER_PROP[9]" required>
+									</label>
+									<a href="#" class="form__link-abs form__link-abs--geo js-geolocation" role="button"></a>
+								</div>
+								<div class="form__row-line">
+									<label class="form__input-label form__input-label--reset form__input-label--col">
+										<span class="form__title">Подъезд</span>
+										<input class="form__input js-input js-entrance-current" type="text" name="ORDER_PROP[12]">
+									</label>
+									<label class="form__input-label form__input-label--reset form__input-label--col">
+										<span class="form__title">Домофон</span>
+										<input class="form__input js-input js-doorphone-current" type="text" name="ORDER_PROP[15]">
+									</label>
+
+									<label class="form__checkbox-label form__checkbox-label--col" name="ToAddressBookLabel">
+										<span class="form__checkbox-title">В мои адреса</span>
+										<input class="form__checkbox js-my-address" type="checkbox" name="ToAddressBook">
+										<div class="form__custom-checkbox"></div>
+									</label>
+								</div>
+								<div class="form__text-between">
+                            		<input type="hidden" name="ORDER_PROP[18]" value="">
+									<span name="DeliveryTime">Доставить в ближайшее время</span>
+									<a href="#" class="form__link-abs form__link-abs--text-between js-change-date-near-future" role="button">изменить</a>
+								</div>
+
+								<div class="near-future js-near-future">
+									<div class="near-future__content">
+										<div class="near-future__select">
+											<label class="form__select-label form__select-label--reset form__select-label--right">
+												<select class="form__select form__select--blue js-select-full-day">
+													<option value="0">День</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</label>
+											<label class="form__select-label form__select-label--reset form__select-label--right">
+												<select class="form__select form__select--blue js-select-full-month">
+													<option value="0">Месяц</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</label>
+											<label class="form__select-label form__select-label--reset">
+												<select class="form__select form__select--blue js-select-full-year">
+													<option value="0">Год</option>
+													<option value="2019">2019</option>
+													<option value="2020">2020</option>
+													<option value="2021+">2021+</option>
+												</select>
+											</label>
+										</div>
+
+										<div class="near-future__time">
+											<div class="near-future__time-text">Время</div>
+											<div class="form__input-counter">
+												<input class="form__input-counter-text js-form-input-counter-text" type="text" type-input="hour">
+												<a href="#" class="form__input-counter-button form__input-counter-button--top js-form-input-counter-top"></a>
+												<a href="#" class="form__input-counter-button form__input-counter-button--bottom js-form-input-counter-bottom"></a>
+											</div>
+											<div class="near-future__time-symbol">:</div>
+											<div class="form__input-counter">
+												<input class="form__input-counter-text js-form-input-counter-text" type="text" type-input="min">
+												<a href="#" class="form__input-counter-button form__input-counter-button--top js-form-input-counter-top"></a>
+												<a href="#" class="form__input-counter-button form__input-counter-button--bottom js-form-input-counter-bottom"></a>
+											</div>
+										</div>
+
+										<div class="near-future__checkbox">
+											<label class="form__checkbox-label">
+												<span class="form__checkbox-title">В ближайшее время</span>
+												<input class="form__checkbox" type="checkbox" name="ORDER_PROP[17]">
+												<div class="form__custom-checkbox"></div>
+											</label>
+										</div>
+
+										<div class="near-future__buttons">
+											<a href="#" class="form__link-button js-apply" role="button">Применить</a>
+											<a href="#" class="form__link-button js-cancel" role="button">Отменить</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__section">
+								<span class="form__heading">Контакты для связи</span>
+								<label class="form__input-label">
+									<span class="form__title">Имя</span>
+									<input class="form__input js-input" type="text" name="ORDER_PROP[1]" required>
+								</label>
+								<label class="form__input-label form__input-label--reset">
+									<span class="form__title">Телефон</span>
+									<input class="form__input js-input js-form-phone" type="phone" name="ORDER_PROP[3]" required>
+								</label>
+								<label class="form__input-label form__input-label--reset">
+									<span class="form__title">Email</span>
+									<input class="form__input js-input" type="email" name="ORDER_PROP[2]" required>
+								</label>
+
+								<label class="form__checkbox-label" name="RegisterLabel">
+									<span class="form__checkbox-title">зарегистрироваться</span>
+									<input class="form__checkbox js-checkbox-registration" type="checkbox" name="Register">
+									<div class="form__custom-checkbox"></div>
+								</label>
+							</div>
+
+							<div class="registration js-registration">
+								<div class="registration__male">
+                            		<input type="hidden" name="RegSex" value='M'>
+									<a href="#" class="registration__male-item js-registration-male" role="button">мужчина</a>
+									<a href="#" class="registration__male-item js-registration-male" role="button">женщина</a>
+								</div>
+
+								<div class="registration__form">
+									<div class="form__block-link">
+										<label class="form__input-label form__input-label--calendar">
+											<span class="form__title">Дата рождения</span>
+											<input class="form__input js-input js-birthday" type="text" name="RegBirthday">
+										</label>
+										<a href="#" class="form__link-abs form__link-abs--calendar js-calendar" role="button"></a>
+									</div>
+									<label class="form__input-label form__input-label--reset">
+										<span class="form__title">Пароль</span>
+										<input class="form__input js-input js-password" type="text" name="RegPassword">
+									</label>
+									<label class="form__input-label form__input-label--reset">
+										<span class="form__title">Подтвердите пароль</span>
+										<input class="form__input js-input js-password" type="text" name="RegPasswordRepeat">
+									</label>
+								</div>
+							</div>
+
+							<div class="form__section">
+								<span class="form__heading">Оплата</span>
+								<label class="form__select-label">
+									<span></span>
+									<select class="form__select form__select--blue js-select-full-pay" name="PaySystem">
+										<option value="1">Наличными курьеру</option>
+										<option value="2">Оплата онлайн</option>
+									</select>
+								</label>
+
+								<div class="form__block-link">
+									<label class="form__input-label form__input-label--reset">
+										<span class="form__title">Промокод</span>
+										<input class="form__input form__input--link js-input" type="text" name="PromoCode">
+									</label>
+									<a href="#" class="form__link-abs js-promocode" role="button">Применить</a>
+								</div>
+
+								<label class="form__input-label form__input-label--reset">
+									<span class="form__title">Сдача с какой суммы понадобится?</span>
+									<input class="form__input js-input js-input-number" type="text" name="ORDER_PROP[29]">
+								</label>
+							</div>
+							<div class="form__section">
+								<span class="form__heading">Дополнительно</span>
+								<label class="form__select-label form__select-label--base">
+									<span class="form__title form__title--base">Кол-во персон</span>
+									<div class="form__select-short">
+										<select class="form__select form__select--base js-select-short" name="ORDER_PROP[20]">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9+">9+</option>
+										</select>
+									</div>
+								</label>
+
+								<label class="form__checkbox-label">
+									<span class="form__checkbox-title">мне не нужны одноразовые приборы</span>
+									<input class="form__checkbox" type="checkbox" name="ORDER_PROP[21]">
+									<div class="form__custom-checkbox"></div>
+								</label>
+							</div>
+							<div class="form__section">
+								<span class="form__heading">Комментарий</span>
+								<label class="form__textarea-label">
+									<span class="form__title">Можете что-нибудь написать</span>
+									<textarea class="form__textarea js-input" name="ORDER_PROP[16]"></textarea>
+								</label>
+							</div>
+							<div class="form__block-text">
+								<p class="form__text" name="OrderWarning">Закажите еще на 2000 рублей и получите доставку в подарок!</p>
+
+								<div class="form__row">
+									<div class="form__row-text">Доставка</div>
+									<div class="form__row-text" name="OrderDelivery">2&nbsp;000₽</div>
+								</div>
+								<div class="form__row">
+									<div class="form__row-text">Скидка</div>
+									<div class="form__row-text" name="OrderDiscount">1&nbsp;000₽</div>
+								</div>
+								<div class="form__row">
+									<div class="form__row-text form__row-text--big">К оплате</div>
+									<div class="form__row-text form__row-text--big">
+										<span class="form__row-text form__row-text--old is-hidden js-price-form-old-block">
+											<span class="js-price-form-old" name="OrderOldTotal">0</span> <span>₽</span>
+										</span>
+										<span>
+											<span class="js-price-form" name="OrderTotal">0</span> <span>₽</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="form__block-button">
+								<button class="form__button" onclick="alert('Hi!); SaveForm(); return false;">Заказать</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="src/js/lib/jquery.mask.min.js"></script>
+	<script src="src/js/lib/jquery.sticky.js"></script>
+	<script src="src/js/lib/choices.min.js"></script>
+
+	<script src="src/js/select-custom.js"></script>
+	<script src="src/js/input-form.js"></script>
+	<script src="src/js/count-product.js"></script>
+	<script src="src/js/mask-form.js"></script>
+	<script src="src/js/sticky-suctom.js"></script>
+	<script src="src/js/registration.js"></script>
+	<script src="src/js/geolocation.js"></script>
+	<script src="src/js/calendar.js"></script>
+	<script src="src/js/near-future.js"></script>
+	<script src="src/js/my-address.js"></script>
+	<script src="src/js/main.js"></script>
+
+    <script src="src/js/input_validation.js"></script>
+
+	<script type="text/template" id="template_product">
+		<div class='order__item js-order-item' data-item-id='{id}'>
+			<div class='order__counter'>
+				<a href='#' role='button' class='order__counter-minus js-form-product-minus'></a>
+				<span class='order__counter-text js-form-counter-text'>1</span>
+				<a href='#' role='button' class='order__counter-plus js-form-product-plus'></a>
+			</div>
+			<div class='order__text'>{text}</div>
+			<div class='order__price'>
+				<div class='order__price-old {classOldPrice} js-form-product-old'><span>{oldPrice}</span><span>₽</span></div>
+				<div class='order__price-current js-form-product-new'><span>{price}</span><span>₽</span></div>
+			</div>
+			<a href="#" role="button" class='order__delete js-form-product-delete'></a>
+		</div>
+	</script>
+</body>
+</html>
