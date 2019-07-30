@@ -8,6 +8,7 @@
 
 .main__home-subnav-list {
     margin: 0 0 0 -20px;
+    overflow: hidden;
 }
 
 .main__home-subnav-item {
@@ -19,6 +20,11 @@
 .main__home-subnav-link--active {
     color: #2CA2E0!important;
     font-weight: 600;
+}
+
+.main__home-subnav-item-exit {float: right;overflow: hidden;}
+.main__home-subnav-item-exit .main__home-subnav-link{
+    color: #2CA2E0
 }
 
 .divider {

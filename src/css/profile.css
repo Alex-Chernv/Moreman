@@ -60,6 +60,7 @@
 .profile-modal-body .profile-form__input::placeholder {
     font-weight: 400;
     color: #D8D8D8;
+    font-family: "Futura PT Book", Arial;
 }
 
 
@@ -99,29 +100,11 @@
     box-shadow: none;
 }
 
-.profile-registration .profile-form-group-wrap {
-    border: 1px solid #D8D8D8;
-    padding: 10px 0 0 0;
-    width: 100%;
-}
-
-.profile-registration .profile-form-group-wrap .profile__text {
-    margin-left: 15px;
-}
-
-.profile-form-group-wrap .profile-form__input {
-    border-left: none;
-    border-right: none;
-}
-
-.profile-form-group-wrap .profile-form__input:last-child {
-    border-bottom: none;
-}
 
 .profile-registration .profile-select-wrap {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .profile-registration .form__select-label {
@@ -129,7 +112,7 @@
 }
 
 .profile-registration .form__select-label:nth-child(2) {
-    width: 97px !important;
+    width: 115px !important;
 }
 
 /*========== profile main styles ==========*/
@@ -184,8 +167,10 @@
     height: 40px;
     padding: 0 10px;
     width: 290px;
+    font-family: "Futura PT Book", Arial;
     font-size: 16px;
     font-weight: 700;
+    background: white;
 }
 
 .profile-form-group .form__checkbox-label {
@@ -311,9 +296,7 @@
     margin: 30px 0;
 }
 
-.profile-form-group-textarea {
-    align-items: baseline;
-}
+.profile-form-group-textarea {align-items: flex-start;}
 
 .profile-form__textarea {
     height: 110px;
